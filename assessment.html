@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Ten-question demonstration test"><meta name="robots" content="noindex,nofollow"><title>Practice test | Rehabit Academy prototype</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/style.css"><style media="print">/* Print sheet for prototype3. Loaded with media="print" so it never competes
+   with the screen cascade in style.css.
+   Why it exists: the world is a dark navy field with light text. Browsers drop
+   background colours by default on paper, so an unhandled page prints white
+   text on white paper. This sheet inverts the ground and the ink together. */
+:root{color-scheme:light}
+@media print{
+  body{background:#fff;color:#10222e;font-size:11.5pt}
+  .header,.footer .bloom,.nav-toggle,.ruler,.spine-bg,.wave-divider,.carousel-ctl,.skip,.hero-proof{display:none!important}
+  .main{padding:0;max-width:none}
+  .panel,.plate,.prose,.sheet,.table-wrap,.result,.quiz-meta,.footer{background:#fff;color:#10222e;box-shadow:none;border:1px solid rgba(16,34,46,.3)}
+  h1,h2,h3,h4,p,li,td,th,b,strong,.lead,.note,.step-body p,.plan h3,.plan .amount{color:#10222e}
+  .muted,.small,.hint,.table caption,.sheet .fine,.footer .legal,.footer h4{color:#4a5a66}
+  .note,.status{background:#f5f7f8;color:#10222e;border:1px solid rgba(16,34,46,.32)}
+  .btn,.btn-ghost,.btn-quiet{background:#fff;color:#002b49;border:1px solid #002b49;box-shadow:none}
+  .plan.is-featured{border:2px solid #c1481a;color:#10222e}
+  .plan.is-featured li,.plan.is-featured .amount,.plan.is-featured h3{color:#10222e}
+  .step.is-live .step-mark i{background:#fff;color:#c1481a;border-color:#c1481a}
+  .node{background:#f5f7f8;color:#10222e;border-color:rgba(16,34,46,.32)}
+  .node .dot{background:#c1481a;outline:none;box-shadow:none}
+  .progress>span{background:#c1481a}
+  .footer{background:#fff;color:#10222e;border-top:1px solid rgba(16,34,46,.3)}
+  a{color:#002b49}
+  .brandlock img,.sheet img.mark{filter:brightness(.28)}
+  section,.step,.panel,.plate,.sheet{break-inside:avoid}
+}
+</style></head><body><div class="shell"><a class="skip" href="#main">Skip to content</a><header class="header"><nav class="nav" aria-label="Main navigation"><a class="brandlock" href="index.html" aria-label="Rehabit Academy home"><img src="assets/img/logo.png" alt="Rehabit" width="1522" height="260"><span class="sub">Academy</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span class="material-symbols-outlined" aria-hidden="true">menu</span><span class="vh">Menu</span></button><div class="links" id="navLinks"><a href="courses.html" aria-current="page">Courses</a><a href="dashboard.html">Dashboard</a><a href="certificates.html">My CPD</a><a href="billing.html">Pricing</a><a href="admin.html">Admin</a><a href="login.html"><span class="material-symbols-outlined" aria-hidden="true">login</span>Log in</a><a class="btn" href="talk.html">Talk to us</a></div></nav></header><main class="main" id="main">
+<div class="page-head">
+  <h1>Ten-question practice test</h1>
+  <p class="lead">The real interaction, with sample questions. Marking happens in your browser so you can feel the flow; production marking is server-side, transactional and audited.</p>
+</div>
+<div class="quiz-meta">
+  <div><b id="attemptsLeft">2</b><span>Attempts left (proposed)</span></div>
+  <div><b>10</b><span>Questions</span></div>
+  <div><b>80%</b><span>Pass mark (proposed)</span></div>
+  <div><b>0</b><span>CEUs on offer</span></div>
+  <div class="progress" data-flex><span id="quizProgress" data-w="0"></span></div>
+</div>
+<div class="note alert"><span class="material-symbols-outlined" aria-hidden="true">gpp_maybe</span><span><b>Not secure assessment.</b> Anyone can read the answers in the page source. Before launch the question bank moves server-side, attempts lock on the server, and results are written as an immutable completion record.</span></div>
+<form id="quizForm" aria-label="Practice test questions"></form>
+<div class="result hide" id="quizResult" role="status"></div>
+<div class="panel flat" data-mt>
+  <h2 class="sm">If the attempts run out</h2>
+  <p class="muted">Production behaviour is an explicit locked state with a date, a reason and a route forward, not a silent failure. <a href="attempt-locked.html">Preview that screen</a>.</p>
+</div>
+</main><footer class="footer"><img class="bloom" src="assets/img/footer_blobs.webp" alt="" aria-hidden="true"><div class="fin"><div><h4>Rehabit Academy</h4><p class="small">CPD built on the Rehabit platform. This is an illustrative prototype: sample lessons, unaccredited content, and no working accounts, payments, grading or records.</p><p class="statusline"><span class="status s-none">Prototype</span><span class="status s-gate">No accreditation approved</span></p></div><div><h4>Learning</h4><ul><li><a href="courses.html">Sample lessons</a></li><li><a href="index.html#path">How a lesson becomes a record</a></li><li><a href="assessment.html">Practice test</a></li><li><a href="certificate-example.html">Certificate design sample</a></li></ul></div><div><h4>Account</h4><ul><li><a href="register.html">Create account</a></li><li><a href="verify-email.html">Verify email</a></li><li><a href="reset-password.html">Reset password</a></li><li><a href="profile.html">Profile and settings</a></li><li><a href="talk.html">Talk to us</a></li><li><a href="https://rehabit.co.za/" rel="noopener">Rehabit practice software</a></li></ul></div></div><div class="legal"><span>© Rehabit Online (Pty) Ltd — prototype review only, not a published product.</span><span>Terms, Privacy Notice and Security pages pending product-owner approval.</span></div></footer></div><script src="assets/app.js" defer></script></body></html>

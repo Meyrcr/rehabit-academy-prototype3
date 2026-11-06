@@ -1,0 +1,256 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="CPD prototype for rehabilitation practitioners"><meta name="robots" content="noindex,nofollow"><title>Rehabit Academy prototype | Rehabit Academy prototype</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/style.css"><style media="print">/* Print sheet for prototype3. Loaded with media="print" so it never competes
+   with the screen cascade in style.css.
+   Why it exists: the world is a dark navy field with light text. Browsers drop
+   background colours by default on paper, so an unhandled page prints white
+   text on white paper. This sheet inverts the ground and the ink together. */
+:root{color-scheme:light}
+@media print{
+  body{background:#fff;color:#10222e;font-size:11.5pt}
+  .header,.footer .bloom,.nav-toggle,.ruler,.spine-bg,.wave-divider,.carousel-ctl,.skip,.hero-proof{display:none!important}
+  .main{padding:0;max-width:none}
+  .panel,.plate,.prose,.sheet,.table-wrap,.result,.quiz-meta,.footer{background:#fff;color:#10222e;box-shadow:none;border:1px solid rgba(16,34,46,.3)}
+  h1,h2,h3,h4,p,li,td,th,b,strong,.lead,.note,.step-body p,.plan h3,.plan .amount{color:#10222e}
+  .muted,.small,.hint,.table caption,.sheet .fine,.footer .legal,.footer h4{color:#4a5a66}
+  .note,.status{background:#f5f7f8;color:#10222e;border:1px solid rgba(16,34,46,.32)}
+  .btn,.btn-ghost,.btn-quiet{background:#fff;color:#002b49;border:1px solid #002b49;box-shadow:none}
+  .plan.is-featured{border:2px solid #c1481a;color:#10222e}
+  .plan.is-featured li,.plan.is-featured .amount,.plan.is-featured h3{color:#10222e}
+  .step.is-live .step-mark i{background:#fff;color:#c1481a;border-color:#c1481a}
+  .node{background:#f5f7f8;color:#10222e;border-color:rgba(16,34,46,.32)}
+  .node .dot{background:#c1481a;outline:none;box-shadow:none}
+  .progress>span{background:#c1481a}
+  .footer{background:#fff;color:#10222e;border-top:1px solid rgba(16,34,46,.3)}
+  a{color:#002b49}
+  .brandlock img,.sheet img.mark{filter:brightness(.28)}
+  section,.step,.panel,.plate,.sheet{break-inside:avoid}
+}
+</style></head><body><div class="shell"><a class="skip" href="#main">Skip to content</a><header class="header"><nav class="nav" aria-label="Main navigation"><a class="brandlock" href="index.html" aria-label="Rehabit Academy home"><img src="assets/img/logo.png" alt="Rehabit" width="1522" height="260"><span class="sub">Academy</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span class="material-symbols-outlined" aria-hidden="true">menu</span><span class="vh">Menu</span></button><div class="links" id="navLinks"><a href="courses.html">Courses</a><a href="dashboard.html">Dashboard</a><a href="certificates.html">My CPD</a><a href="billing.html">Pricing</a><a href="admin.html">Admin</a><a href="login.html"><span class="material-symbols-outlined" aria-hidden="true">login</span>Log in</a><a class="btn" href="talk.html">Talk to us</a></div></nav></header><main class="main" id="main">
+<div class="hero spine-wrap" id="top">
+  <svg class="spine-bg" viewBox="0 0 1440 1200" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none"><g stroke-width="2.4"><path d="M60 1240C300 1060 40 860 300 700S760 640 900 420 1180 160 1420 40" stroke="#e83024" opacity=".95"/><path d="M100 1246C340 1066 80 866 340 706S800 646 940 426 1220 166 1460 46" stroke="#f2482c" opacity=".8"/><path d="M140 1252C380 1072 120 872 380 712S840 652 980 432 1260 172 1500 52" stroke="#fa5f34" opacity=".66"/><path d="M180 1258C420 1078 160 878 420 718S880 658 1020 438 1300 178 1540 58" stroke="#ff7c44" opacity=".52"/><path d="M220 1264C460 1084 200 884 460 724S920 664 1060 444 1340 184 1580 64" stroke="#ff7c44" opacity=".36"/><path d="M260 1270C500 1090 240 890 500 730S960 670 1100 450 1380 190 1620 70" stroke="#ff7c44" opacity=".2"/></g><ellipse cx="420" cy="700" rx="320" ry="210" fill="#ff7c44" opacity=".06"/><ellipse cx="1000" cy="420" rx="300" ry="200" fill="#e83024" opacity=".05"/></svg>
+  <div class="ruler" aria-hidden="true">
+    <i class="here" data-step="path">Line</i><i data-step="record">Record</i><i data-step="gate">Gate</i>
+    <i data-step="plans">Plans</i><i data-step="truth">Real</i><i data-step="talk">Talk</i>
+  </div>
+  <div class="hero-grid">
+    <div>
+      <h1>Reading to<br>record, on<br><span>one line.</span></h1>
+      <p class="lead">Open a clinical lesson, answer ten questions, keep the certificate and the history behind it. Rehabit Academy puts every step of CPD on the same line, so the paperwork you file at year end is already done.</p>
+      <div class="hero-cta">
+        <a class="btn btn-lit" href="talk.html"><span class="material-symbols-outlined" aria-hidden="true">support_agent</span>Talk to us</a>
+        <a class="btn-ghost" href="course.html?id=knee">Read a sample lesson <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a>
+      </div>
+      <p class="muted small">Illustrative prototype. Sample content, unaccredited, 0 CEUs. No account, payment, certificate or HPCSA submission exists on these pages.</p>
+    </div>
+    <div class="plate">
+      <p class="statusline"><span class="status s-draft"><span class="material-symbols-outlined" aria-hidden="true">description</span>Sample lesson</span><span class="status s-proposed"><span class="material-symbols-outlined" aria-hidden="true">pending</span>Draft v0.3</span></p>
+      <h2 class="sm">Knee Joint Anatomy</h2>
+      <p class="muted">Anatomy fundamentals · 45 min · 10 questions · up to 2 proposed attempts</p>
+      <p>This is a placeholder for a professionally authored and clinically reviewed article. Editors will add text, tables, labelled anatomical illustrations, video modules and academic references.</p>
+      <div class="progress" role="img" aria-label="Reading progress: not started in this prototype"><span data-w="0"></span></div>
+      <p class="statusline" data-mt><span class="status s-none"><span class="material-symbols-outlined" aria-hidden="true">timer</span>You have not opened this lesson</span></p>
+      <a class="btn btn-block" href="course.html?id=knee"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span>Open the sample reader</a>
+    </div>
+  </div>
+  <nav class="stage-chain" aria-label="Stages of a CPD record, on the line">
+    <a class="node is-lit" href="#path"><span class="dot"></span>01 Read<b>article + references</b></a>
+    <a class="node" href="#path"><span class="dot"></span>02 Answer<b>10 questions</b></a>
+    <a class="node" href="#path"><span class="dot"></span>03 Pass<b>80%, 2 attempts</b></a>
+    <a class="node" href="#record"><span class="dot"></span>04 Certificate<b>design sample</b></a>
+    <a class="node" href="#record"><span class="dot"></span>05 My CPD<b>the record</b></a>
+    <span class="node is-off"><span class="dot"></span>06 Provider submission<b>not built</b></span>
+  </nav>
+  <div class="hero-proof">
+    <div><b>6</b><span>Sample lessons<br>readable now</span></div>
+    <div><b>3</b><span>Categories live<br>in the demo</span></div>
+    <div><b>10</b><span>Questions per<br>test (proposed)</span></div>
+    <div><b class="zero">0</b><span>Accredited CEUs<br>nothing approved</span></div>
+  </div>
+</div>
+
+<img class="wave-divider" src="assets/img/cta_waves.svg" alt="" aria-hidden="true">
+
+<section class="band" id="path">
+  <div class="sec-head">
+    <h2>One line, five stages</h2>
+    <p class="lead">A practitioner does not buy an article. They buy the record an article ends in. Each stage below is a screen in this prototype — except the last, which is deliberately empty.</p>
+  </div>
+  <div class="steps">
+    <div class="step is-live">
+      <div class="step-mark"><i>01</i></div>
+      <div id="stage-read" class="step-body">
+        <h3>Read the lesson</h3>
+        <p>Learning text, references and labelled diagrams in a reader built for a phone at 66 characters per line. The accreditation status of the activity sits above the title, not in a footnote.</p>
+        <p class="statusline"><a class="btn-quiet" href="course.html?id=knee">Open the reader <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-mark"><i>02</i></div>
+      <div id="stage-answer" class="step-body">
+        <h3>Answer ten questions</h3>
+        <p>Multiple choice, keyboard operable, one question on screen at a time on a phone. The attempt counter, the timer and the pass mark are shown before the first question, not after the last.</p>
+        <p class="statusline"><a class="btn-quiet" href="assessment.html">Try the practice test <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-mark"><i>03</i></div>
+      <div id="stage-pass" class="step-body">
+        <h3>Pass, or use the second attempt</h3>
+        <p>A proposed 80% pass mark and two attempts, with a server-enforced lock between them. This prototype marks the test in your browser to show the interaction; production marking is server-side and transactional.</p>
+        <p class="statusline"><span class="status s-proposed"><span class="material-symbols-outlined" aria-hidden="true">fact_check</span>Pass mark: proposal, not approved</span><a class="btn-quiet" href="attempt-locked.html">Preview the locked state <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-mark"><i>04</i></div>
+      <div id="stage-certificate" class="step-body">
+        <h3>Receive the certificate</h3>
+        <p>A completion document a practitioner can read at a glance: activity, version, provider, approval number, CEUs, category. This page shows the layout only, stamped as invalid.</p>
+        <p class="statusline"><a class="btn-quiet" href="certificate-example.html">See the design sample <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-mark"><i>05</i></div>
+      <div id="stage-record" class="step-body">
+        <h3>Keep the record</h3>
+        <p>Every completion, its evidence and its submission status stay in one history you can export. The learner certificate and the official submission evidence are separate documents by design.</p>
+        <p class="statusline"><a class="btn-quiet" href="certificates.html">Open My CPD <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a></p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-mark"><i><span class="material-symbols-outlined" aria-hidden="true">block</span></i></div>
+      <div id="stage-submit" class="step-body">
+        <h3>Provider submission</h3>
+        <p class="muted">Not built, and not shown to learners. Nothing reaches an accreditor until a decision exists for that exact activity and version. The row stays empty on purpose.</p>
+        <p class="statusline"><span class="status s-gate"><span class="material-symbols-outlined" aria-hidden="true">gpp_maybe</span>Awaiting accreditation</span><a class="btn-quiet" href="admin.html">See the admin gate <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-lit" id="record">
+  <div class="g-2 grid" data-align>
+    <div>
+      <h2>The record is the product</h2>
+      <p class="lead">A CPD year is a list with dates on it. Rehabit Academy keeps that list as evidence: who did what, on which version of the activity, under which approval, and what was submitted.</p>
+      <ul>
+        <li>Completion history per practitioner, per activity version.</li>
+        <li>Accreditation snapshot stored with the award, so a later re-rating cannot rewrite history.</li>
+        <li>Evidence register export for the provider, separate from the learner's certificate.</li>
+      </ul>
+      <p class="muted small">None of the rows below are real. They show the shape of the data a practitioner needs at renewal time.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <caption>Sample rows only · 0 accredited CEUs</caption>
+        <thead><tr><th>Activity</th><th>Version</th><th>Status</th><th>CEUs</th></tr></thead>
+        <tbody>
+          <tr><td class="subject"><b>Knee Joint Anatomy</b><span>2026-11-04 · sample</span></td><td>v0.3</td><td><span class="status s-draft">Draft</span></td><td class="num">0</td></tr>
+          <tr><td class="subject"><b>ACL Injury &amp; Rehabilitation</b><span>opened, not completed</span></td><td>v0.2</td><td><span class="status s-none">In progress</span></td><td class="num">0</td></tr>
+          <tr class="is-gated"><td class="subject"><b>Ethics, Human Rights &amp; Health Law</b><span>hidden from learners</span></td><td>—</td><td><span class="status s-gate">Gated</span></td><td class="num">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="gate">
+  <div class="sec-head">
+    <h2>Three categories open, one closed</h2>
+    <p class="lead">The Academy will not sell a lesson as CPD before an accreditor has approved it. That rule is a switch in the product, so the catalogue is the honest place to look for it.</p>
+  </div>
+  <div class="g-2 grid">
+    <div class="panel">
+      <h3>Live in this prototype</h3>
+      <ul class="plain">
+        <li><b>Joints &amp; Orthopaedics</b> — 2 sample lessons, 40–60 min</li>
+        <li><b>Anatomy</b> — 2 sample lessons, 45–55 min</li>
+        <li><b>Diseases &amp; Medical Conditions</b> — 2 sample lessons, 50 min</li>
+      </ul>
+      <a class="btn-ghost" href="courses.html"><span class="material-symbols-outlined" aria-hidden="true">search</span>Browse the catalogue</a>
+    </div>
+    <div class="panel flat">
+      <h3>Switched off</h3>
+      <p class="statusline"><span class="status s-gate"><span class="material-symbols-outlined" aria-hidden="true">block</span>Ethics, Human Rights &amp; Health Law</span></p>
+      <p>No content is authored, no activity number exists, and no CEU value may be inferred from lesson length. The category stays invisible to learners until an approval for that activity and version is on file.</p>
+      <p class="muted small">CEU quantities come only from an approved accreditation decision for the relevant course version and profession.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="plans">
+  <div class="topline">
+    <div><h2>Plans, as proposed</h2>
+    <p class="lead">Entitlements, rollover, grace periods and refunds are still business decisions. These are the shapes being discussed, not prices on an invoice.</p></div>
+    <a class="btn-quiet" href="billing.html">Full pricing detail <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a>
+  </div>
+  <div class="g-3 grid plans">
+    <div class="plan">
+      <span class="status s-none">Essential</span>
+      <p class="amount">R149<small> / month*</small></p>
+      <h3>Up to 3 courses</h3>
+      <ul><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Limited enrolments each month</li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>History retained after cancellation</li><li class="off"><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Automatic credit rollover</li></ul>
+      <a class="btn-ghost btn-block" href="talk.html">Ask about Essential</a>
+    </div>
+    <div class="plan is-featured">
+      <span class="status s-live">Under discussion</span>
+      <p class="amount">R249<small> / month*</small></p>
+      <h3>Unlimited</h3>
+      <ul><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Eligible courses without a monthly quota</li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Completion records and exports</li><li class="off"><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Group or practice billing</li></ul>
+      <a class="btn btn-dark plan-dark-btn btn-block" href="talk.html">Ask about Unlimited</a>
+    </div>
+    <div class="plan">
+      <span class="status s-none">Once-off</span>
+      <p class="amount">R99+<small> / course*</small></p>
+      <h3>Single course</h3>
+      <ul><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Buy the topic you need</li><li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Ten-question test included</li><li class="off"><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Refund workflow (P2)</li></ul>
+      <a class="btn-ghost btn-block" href="talk.html">Ask about single courses</a>
+    </div>
+  </div>
+  <p class="muted small">*Illustrative, unapproved. No payment is taken anywhere in this prototype; production uses a hosted PayFast checkout with server-verified callbacks.</p>
+</section>
+
+<section class="band" id="truth">
+  <div class="g-2 grid">
+    <div class="panel">
+      <h3><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>What works in this prototype</h3>
+      <ul class="plain">
+        <li>Six sample lessons, their reader and their references</li>
+        <li>Catalogue search and category filter</li>
+        <li>A ten-question test marked in your browser</li>
+        <li>Record, certificate, pricing, account and admin layouts</li>
+        <li>Keyboard navigation, focus order, reduced-motion behaviour</li>
+      </ul>
+    </div>
+    <div class="panel flat">
+      <h3><span class="material-symbols-outlined" aria-hidden="true">cancel</span>What does not exist yet</h3>
+      <ul class="plain">
+        <li>Accounts, passwords, email verification or session handling</li>
+        <li>Payments, invoices, refunds or subscription state</li>
+        <li>Server-side grading, attempt locks and audit trail</li>
+        <li>PDF certificate generation, signatures, public verification</li>
+        <li>Accreditation approvals, CEU awards and HPCSA submission</li>
+        <li>The existing Rehabit stack, API and identity model (unknown: Sprint 0 work)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band band-lit" id="talk">
+  <div class="g-2 grid" data-align>
+    <div>
+      <h2>Talk to us before you build a habit around this</h2>
+      <p class="lead">The Academy is worth pricing properly only once accreditation, entitlement counting and the identity model are settled. Those three decisions are what a conversation is for.</p>
+      <a class="btn btn-lit" href="talk.html"><span class="material-symbols-outlined" aria-hidden="true">send</span>Start the conversation</a>
+    </div>
+    <div class="panel flat">
+      <h3>Open decisions we need from you</h3>
+      <ul class="plain">
+        <li>Reuse the Rehabit login, or issue separate Academy accounts?</li>
+        <li>Do the pass mark and the two-attempt rule stand as proposed?</li>
+        <li>Which activity goes to the accreditor first, and at what CEU value?</li>
+        <li>Prices, rollover and cancellation grace periods.</li>
+        <li>Is the ethics category in the launch catalogue at all?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main><footer class="footer"><img class="bloom" src="assets/img/footer_blobs.webp" alt="" aria-hidden="true"><div class="fin"><div><h4>Rehabit Academy</h4><p class="small">CPD built on the Rehabit platform. This is an illustrative prototype: sample lessons, unaccredited content, and no working accounts, payments, grading or records.</p><p class="statusline"><span class="status s-none">Prototype</span><span class="status s-gate">No accreditation approved</span></p></div><div><h4>Learning</h4><ul><li><a href="courses.html">Sample lessons</a></li><li><a href="index.html#path">How a lesson becomes a record</a></li><li><a href="assessment.html">Practice test</a></li><li><a href="certificate-example.html">Certificate design sample</a></li></ul></div><div><h4>Account</h4><ul><li><a href="register.html">Create account</a></li><li><a href="verify-email.html">Verify email</a></li><li><a href="reset-password.html">Reset password</a></li><li><a href="profile.html">Profile and settings</a></li><li><a href="talk.html">Talk to us</a></li><li><a href="https://rehabit.co.za/" rel="noopener">Rehabit practice software</a></li></ul></div></div><div class="legal"><span>© Rehabit Online (Pty) Ltd — prototype review only, not a published product.</span><span>Terms, Privacy Notice and Security pages pending product-owner approval.</span></div></footer></div><script src="assets/app.js" defer></script></body></html>

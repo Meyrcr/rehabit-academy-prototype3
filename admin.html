@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Admin and accreditation gating"><meta name="robots" content="noindex,nofollow"><title>Academy management | Rehabit Academy prototype</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/style.css"><style media="print">/* Print sheet for prototype3. Loaded with media="print" so it never competes
+   with the screen cascade in style.css.
+   Why it exists: the world is a dark navy field with light text. Browsers drop
+   background colours by default on paper, so an unhandled page prints white
+   text on white paper. This sheet inverts the ground and the ink together. */
+:root{color-scheme:light}
+@media print{
+  body{background:#fff;color:#10222e;font-size:11.5pt}
+  .header,.footer .bloom,.nav-toggle,.ruler,.spine-bg,.wave-divider,.carousel-ctl,.skip,.hero-proof{display:none!important}
+  .main{padding:0;max-width:none}
+  .panel,.plate,.prose,.sheet,.table-wrap,.result,.quiz-meta,.footer{background:#fff;color:#10222e;box-shadow:none;border:1px solid rgba(16,34,46,.3)}
+  h1,h2,h3,h4,p,li,td,th,b,strong,.lead,.note,.step-body p,.plan h3,.plan .amount{color:#10222e}
+  .muted,.small,.hint,.table caption,.sheet .fine,.footer .legal,.footer h4{color:#4a5a66}
+  .note,.status{background:#f5f7f8;color:#10222e;border:1px solid rgba(16,34,46,.32)}
+  .btn,.btn-ghost,.btn-quiet{background:#fff;color:#002b49;border:1px solid #002b49;box-shadow:none}
+  .plan.is-featured{border:2px solid #c1481a;color:#10222e}
+  .plan.is-featured li,.plan.is-featured .amount,.plan.is-featured h3{color:#10222e}
+  .step.is-live .step-mark i{background:#fff;color:#c1481a;border-color:#c1481a}
+  .node{background:#f5f7f8;color:#10222e;border-color:rgba(16,34,46,.32)}
+  .node .dot{background:#c1481a;outline:none;box-shadow:none}
+  .progress>span{background:#c1481a}
+  .footer{background:#fff;color:#10222e;border-top:1px solid rgba(16,34,46,.3)}
+  a{color:#002b49}
+  .brandlock img,.sheet img.mark{filter:brightness(.28)}
+  section,.step,.panel,.plate,.sheet{break-inside:avoid}
+}
+</style></head><body><div class="shell"><a class="skip" href="#main">Skip to content</a><header class="header"><nav class="nav" aria-label="Main navigation"><a class="brandlock" href="index.html" aria-label="Rehabit Academy home"><img src="assets/img/logo.png" alt="Rehabit" width="1522" height="260"><span class="sub">Academy</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span class="material-symbols-outlined" aria-hidden="true">menu</span><span class="vh">Menu</span></button><div class="links" id="navLinks"><a href="courses.html">Courses</a><a href="dashboard.html">Dashboard</a><a href="certificates.html">My CPD</a><a href="billing.html">Pricing</a><a href="admin.html" aria-current="page">Admin</a><a href="login.html"><span class="material-symbols-outlined" aria-hidden="true">login</span>Log in</a><a class="btn" href="talk.html">Talk to us</a></div></nav></header><main class="main" id="main">
+<div class="topline">
+  <div><h1>Academy management</h1><p class="lead">Content, accreditation gating and the evidence register. This page has no permissions, no stored data and no backend.</p></div>
+  <button class="btn" data-demo-action="Creating a course"><span class="material-symbols-outlined" aria-hidden="true">add</span>New activity</button>
+</div>
+<p class="statusline"><span class="status s-none">UI concept</span><span class="status s-gate"><span class="material-symbols-outlined" aria-hidden="true">block</span>No roles enforced</span><span class="status s-proposed"><span class="material-symbols-outlined" aria-hidden="true">pending</span>All figures fictional</span></p>
+<div class="g-3 grid">
+  <div class="panel"><h2 class="sm"><span class="material-symbols-outlined" aria-hidden="true">person</span>Registered members</h2><p class="amount">850</p><p class="muted small">Fictional. Sample figure for layout only.</p></div>
+  <div class="panel"><h2 class="sm"><span class="material-symbols-outlined" aria-hidden="true">credit_card</span>Monthly subscribers</h2><p class="amount">420</p><p class="muted small">Fictional. No billing exists in this prototype.</p></div>
+  <div class="panel"><h2 class="sm"><span class="material-symbols-outlined" aria-hidden="true">query_stats</span>Completion records</h2><p class="amount">2,450</p><p class="muted small">Fictional. Would count immutable awards in production.</p></div>
+</div>
+<section class="band">
+  <div class="topline"><div><h2>Publication queue</h2><p class="muted">Nothing publishes without an approval reference for that activity and version.</p></div></div>
+  <div class="table-wrap">
+    <table class="table">
+      <caption>Draft content state in this prototype</caption>
+      <thead><tr><th>Activity</th><th>Version</th><th>Clinical review</th><th>Accreditation</th><th>CEUs</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td class="subject"><b>Knee Joint Anatomy</b><span>Anatomy</span></td><td>v0.3</td><td><span class="status s-proposed">Outstanding</span></td><td><span class="status s-draft">Approval required</span></td><td class="num">0</td><td><button class="btn-ghost" data-demo-action="Reviewing activity content"><span class="material-symbols-outlined" aria-hidden="true">visibility</span>Review</button></td></tr>
+        <tr><td class="subject"><b>ACL Injury &amp; Rehabilitation</b><span>Joints &amp; Orthopaedics</span></td><td>v0.2</td><td><span class="status s-proposed">Outstanding</span></td><td><span class="status s-draft">Unaccredited draft</span></td><td class="num">0</td><td><button class="btn-ghost" data-demo-action="Reviewing activity content"><span class="material-symbols-outlined" aria-hidden="true">visibility</span>Review</button></td></tr>
+        <tr class="is-gated"><td class="subject"><b>Ethics, Human Rights &amp; Health Law</b><span>Category switched off</span></td><td>—</td><td><span class="status s-none">Not authored</span></td><td><span class="status s-gate">No approval</span></td><td class="num">0</td><td><button class="btn-ghost" data-demo-action="Authoring gated content"><span class="material-symbols-outlined" aria-hidden="true">edit</span>Draft</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note"><span class="material-symbols-outlined" aria-hidden="true">lock</span><span><b>Why the gate is in the interface.</b> Advertising a course or a CEU value as accredited before approval for that exact activity and version is the fastest way to lose a professional audience. The gate is a product rule, not a checklist item.</span></div>
+</section>
+<section class="band">
+  <div class="g-2 grid">
+    <div class="panel">
+      <h3><span class="material-symbols-outlined" aria-hidden="true">table_chart</span>Evidence submission register</h3>
+      <p class="muted">Generate completion exports, attach the accreditation evidence for each activity version, and record the provider's acknowledgement when a submission is received.</p>
+      <ul class="plain">
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Batch generation and file retention</li>
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Provider acknowledgement and reference capture</li>
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Reconciliation of awarded CEUs against approvals</li>
+      </ul>
+      <button class="btn" data-demo-action="Exporting the evidence register"><span class="material-symbols-outlined" aria-hidden="true">download</span>Export evidence register (demo)</button>
+      <p class="hint"><span class="material-symbols-outlined" aria-hidden="true">info</span>A certificate email to a learner is not a submission to a regulator. The two records stay separate.</p>
+    </div>
+    <div class="panel flat">
+      <h3><span class="material-symbols-outlined" aria-hidden="true">settings</span>Administration still to define</h3>
+      <ul class="plain">
+        <li>Roles: author, reviewer, accreditation officer, finance, super-user</li>
+        <li>Audit log for every publish, price change and manual CEU edit</li>
+        <li>Question-bank versioning tied to the approved activity version</li>
+        <li>Session, permission and privacy controls (Sprint 0 findings pending)</li>
+      </ul>
+      <a class="btn-quiet" href="talk.html">Raise an admin requirement <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a>
+    </div>
+  </div>
+</section>
+</main><footer class="footer"><img class="bloom" src="assets/img/footer_blobs.webp" alt="" aria-hidden="true"><div class="fin"><div><h4>Rehabit Academy</h4><p class="small">CPD built on the Rehabit platform. This is an illustrative prototype: sample lessons, unaccredited content, and no working accounts, payments, grading or records.</p><p class="statusline"><span class="status s-none">Prototype</span><span class="status s-gate">No accreditation approved</span></p></div><div><h4>Learning</h4><ul><li><a href="courses.html">Sample lessons</a></li><li><a href="index.html#path">How a lesson becomes a record</a></li><li><a href="assessment.html">Practice test</a></li><li><a href="certificate-example.html">Certificate design sample</a></li></ul></div><div><h4>Account</h4><ul><li><a href="register.html">Create account</a></li><li><a href="verify-email.html">Verify email</a></li><li><a href="reset-password.html">Reset password</a></li><li><a href="profile.html">Profile and settings</a></li><li><a href="talk.html">Talk to us</a></li><li><a href="https://rehabit.co.za/" rel="noopener">Rehabit practice software</a></li></ul></div></div><div class="legal"><span>© Rehabit Online (Pty) Ltd — prototype review only, not a published product.</span><span>Terms, Privacy Notice and Security pages pending product-owner approval.</span></div></footer></div><script src="assets/app.js" defer></script></body></html>

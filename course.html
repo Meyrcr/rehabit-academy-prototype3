@@ -1,0 +1,86 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A sample clinical lesson"><meta name="robots" content="noindex,nofollow"><title>Sample lesson reader | Rehabit Academy prototype</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/style.css"><style media="print">/* Print sheet for prototype3. Loaded with media="print" so it never competes
+   with the screen cascade in style.css.
+   Why it exists: the world is a dark navy field with light text. Browsers drop
+   background colours by default on paper, so an unhandled page prints white
+   text on white paper. This sheet inverts the ground and the ink together. */
+:root{color-scheme:light}
+@media print{
+  body{background:#fff;color:#10222e;font-size:11.5pt}
+  .header,.footer .bloom,.nav-toggle,.ruler,.spine-bg,.wave-divider,.carousel-ctl,.skip,.hero-proof{display:none!important}
+  .main{padding:0;max-width:none}
+  .panel,.plate,.prose,.sheet,.table-wrap,.result,.quiz-meta,.footer{background:#fff;color:#10222e;box-shadow:none;border:1px solid rgba(16,34,46,.3)}
+  h1,h2,h3,h4,p,li,td,th,b,strong,.lead,.note,.step-body p,.plan h3,.plan .amount{color:#10222e}
+  .muted,.small,.hint,.table caption,.sheet .fine,.footer .legal,.footer h4{color:#4a5a66}
+  .note,.status{background:#f5f7f8;color:#10222e;border:1px solid rgba(16,34,46,.32)}
+  .btn,.btn-ghost,.btn-quiet{background:#fff;color:#002b49;border:1px solid #002b49;box-shadow:none}
+  .plan.is-featured{border:2px solid #c1481a;color:#10222e}
+  .plan.is-featured li,.plan.is-featured .amount,.plan.is-featured h3{color:#10222e}
+  .step.is-live .step-mark i{background:#fff;color:#c1481a;border-color:#c1481a}
+  .node{background:#f5f7f8;color:#10222e;border-color:rgba(16,34,46,.32)}
+  .node .dot{background:#c1481a;outline:none;box-shadow:none}
+  .progress>span{background:#c1481a}
+  .footer{background:#fff;color:#10222e;border-top:1px solid rgba(16,34,46,.3)}
+  a{color:#002b49}
+  .brandlock img,.sheet img.mark{filter:brightness(.28)}
+  section,.step,.panel,.plate,.sheet{break-inside:avoid}
+}
+</style></head><body><div class="shell"><a class="skip" href="#main">Skip to content</a><header class="header"><nav class="nav" aria-label="Main navigation"><a class="brandlock" href="index.html" aria-label="Rehabit Academy home"><img src="assets/img/logo.png" alt="Rehabit" width="1522" height="260"><span class="sub">Academy</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span class="material-symbols-outlined" aria-hidden="true">menu</span><span class="vh">Menu</span></button><div class="links" id="navLinks"><a href="courses.html" aria-current="page">Courses</a><a href="dashboard.html">Dashboard</a><a href="certificates.html">My CPD</a><a href="billing.html">Pricing</a><a href="admin.html">Admin</a><a href="login.html"><span class="material-symbols-outlined" aria-hidden="true">login</span>Log in</a><a class="btn" href="talk.html">Talk to us</a></div></nav></header><main class="main" id="main">
+<div class="topline">
+  <div><p class="statusline"><span class="status s-draft"><span class="material-symbols-outlined" aria-hidden="true">description</span>Sample lesson</span><span class="status s-proposed"><span class="material-symbols-outlined" aria-hidden="true">fact_check</span>Not clinically reviewed</span><span class="status s-none" data-course-category>Anatomy</span></p>
+  <h1 data-course-name>Knee Joint Anatomy</h1>
+  <p class="lead">Learning text only. Editors will replace this with authored, clinically reviewed content, labelled illustrations, video modules and references.</p></div>
+  <a class="btn-ghost" href="courses.html"><span class="material-symbols-outlined" aria-hidden="true">arrow_circle_left</span>All lessons</a>
+</div>
+<div class="reader">
+  <article class="prose">
+    <div class="course-plate"><span data-course-icon></span><span class="status s-none"><span class="material-symbols-outlined" aria-hidden="true">timer</span>45 min · reading 1 of 1</span><span class="stack" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+    <h2>Learning objectives</h2>
+    <ul class="obj">
+      <li><span class="material-symbols-outlined" aria-hidden="true">fact_check</span>Identify the major anatomical terms relevant to the topic.</li>
+      <li><span class="material-symbols-outlined" aria-hidden="true">fact_check</span>Describe the relationships between musculoskeletal structures.</li>
+      <li><span class="material-symbols-outlined" aria-hidden="true">fact_check</span>Apply basic terminology to professional reading and note-taking.</li>
+    </ul>
+    <h2>Introduction</h2>
+    <p>This paragraph stands in for professionally authored content. It exists so the reading experience can be judged: measure, line height, heading rhythm, the size of touch targets, and how a reference reads on a phone between patients.</p>
+    <p>A biokineticist reads this one-handed, in a corridor, with a patient waiting. Nothing in the layout should require zooming, horizontal scrolling or a second hand.</p>
+    <h2>Core content</h2>
+    <p>Clinical authors define anatomical structures, explain their relevance to practice, and link each claim to peer-reviewed evidence. Illustrations carry alternative descriptions, never colour alone, and a labelled diagram is treated as content with its own rights check.</p>
+    <h3>Terminology at a glance</h3>
+    <div class="table-wrap">
+      <table class="table">
+        <caption>Illustrative rows for layout review only</caption>
+        <thead><tr><th>Term</th><th>Plain meaning</th><th>Where it appears</th></tr></thead>
+        <tbody>
+          <tr><td class="subject"><b>Flexion</b></td><td>Bending a joint, decreasing the angle</td><td>Lesson text, Q5</td></tr>
+          <tr><td class="subject"><b>Abduction</b></td><td>Movement away from the midline</td><td>Lesson text, Q9</td></tr>
+          <tr><td class="subject"><b>Articular cartilage</b></td><td>Tissue covering articulating bone ends</td><td>Lesson text, Q8</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>References</h2>
+    <p class="refs">The course editor supplies full citations: source, URL or DOI, publication date, and the rights position on any diagram or video quoted. A lesson cannot be submitted for accreditation with open reference placeholders.</p>
+    <div class="note"><span class="material-symbols-outlined" aria-hidden="true">quiz</span><span><b>After reading:</b> ten multiple-choice questions, a proposed 80% pass mark and two proposed attempts. This prototype marks the test in your browser, which is why it can never be the real assessment.</span></div>
+    <a class="btn" href="assessment.html"><span class="material-symbols-outlined" aria-hidden="true">checklist</span>Try the 10-question test</a>
+  </article>
+  <aside class="rail">
+    <div class="panel">
+      <h3>Lesson detail</h3>
+      <p class="statusline"><span class="status s-draft">Draft v0.3</span><span class="status s-gate"><span class="material-symbols-outlined" aria-hidden="true">gpp_maybe</span>0 CEUs</span></p>
+      <p class="muted small"><strong data-course-name>Knee Joint Anatomy</strong> · <span data-course-category>Anatomy</span> · 45 min suggested</p>
+      <div class="progress" role="img" aria-label="Reading progress: not started, this prototype does not save state"><span data-w="0"></span></div>
+      <p class="hint"><span class="material-symbols-outlined" aria-hidden="true">info</span>Progress is not saved in a static prototype. Production stores completion server-side as an immutable record.</p>
+      <a class="btn btn-block" href="assessment.html">Start the test <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span></a>
+      <a class="btn-ghost btn-block" href="billing.html">See proposed access plans</a>
+    </div>
+    <div class="panel flat">
+      <h3>What has to happen first</h3>
+      <ul class="plain">
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Clinical authoring and review</li>
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Reference and rights check</li>
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Accreditation submission and approval</li>
+        <li><span class="material-symbols-outlined" aria-hidden="true">pending</span>Question bank versioned with the activity</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</main><footer class="footer"><img class="bloom" src="assets/img/footer_blobs.webp" alt="" aria-hidden="true"><div class="fin"><div><h4>Rehabit Academy</h4><p class="small">CPD built on the Rehabit platform. This is an illustrative prototype: sample lessons, unaccredited content, and no working accounts, payments, grading or records.</p><p class="statusline"><span class="status s-none">Prototype</span><span class="status s-gate">No accreditation approved</span></p></div><div><h4>Learning</h4><ul><li><a href="courses.html">Sample lessons</a></li><li><a href="index.html#path">How a lesson becomes a record</a></li><li><a href="assessment.html">Practice test</a></li><li><a href="certificate-example.html">Certificate design sample</a></li></ul></div><div><h4>Account</h4><ul><li><a href="register.html">Create account</a></li><li><a href="verify-email.html">Verify email</a></li><li><a href="reset-password.html">Reset password</a></li><li><a href="profile.html">Profile and settings</a></li><li><a href="talk.html">Talk to us</a></li><li><a href="https://rehabit.co.za/" rel="noopener">Rehabit practice software</a></li></ul></div></div><div class="legal"><span>© Rehabit Online (Pty) Ltd — prototype review only, not a published product.</span><span>Terms, Privacy Notice and Security pages pending product-owner approval.</span></div></footer></div><script src="assets/app.js" defer></script></body></html>
